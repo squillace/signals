@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "C build sig.wasm",
+          "type": "shell",
+          "command": "/opt/wasi-sdk/bin/clang -g -D_WASI_EMULATED_SIGNAL -lwasi-emulated-signal -o sig.wasm ./signal.c",
+          "group": "build",
+          "presentation": {
+              "reveal": "always",
+              "panel": "new"
+          }
+      }
+  ]
+}
